@@ -1,18 +1,9 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-  @@name = "ruby"
- $name = "ruby"
- 
- PI = 3.14
- 
- LOG10 = 1
- 
- TEMP = 98.5
+
   # GET /books
   # GET /books.json
   def index
-    name = "ruby"
-    @name = "ruby"
     @books = Book.all
   end
 
